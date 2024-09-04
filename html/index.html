@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="/imges/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/imges/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -31,41 +35,91 @@
     </header>
 
     <main>
+      <section class="about mt-8">
+        <div class="contiener flex justify-between items-center">
+          <div class="right">
+            <h2
+              class="font-extrabold text-[70px] leading-[134%] tracking-[0.03em] text-[#3d3d3f]"
+            >
+              Best <span class="text-[#FD695A]">Marketing</span><br />
+              Digital Agency
+            </h2>
+            <p
+              class="pt-6 font-normal text-[21px] leading-[162%] text-[#3d3d3f]"
+            >
+              Various versions have evolved over the years,<br />
+              sometimes by accident, sometimes on purpose
+            </p>
 
-        <section class="about mt-8">
-            <div class="contiener flex justify-between items-center "> 
-               <div class="right">
+            <div class="flex items-center gap-[40px] pt-9">
+              <button
+                type="button"
+                class="b rounded-[50px] w-[137px] h-[50px] bg-[#fd695a] text-white"
+              >
+                Get Started
+              </button>
+              <div class="n flex items-center gap-3">
+                <img
+                  src="/imges/play.svg"
+                  class="w-[35px] h-[35px] bg-[#f5f3f3] rounded-[36px]"
+                  alt="asda"
+                />
+                <a href="#">Watch video</a>
+              </div>
+            </div>
+          </div>
+          <div class="left">
+            <img src="/imges/showcase.png" alt="asd" />
+          </div>
+        </div>
+      </section>
 
-                   
-                   <h2 class="font-extrabold text-[70px] leading-[134%] tracking-[0.03em] text-[#3d3d3f]">
-                       Best <span class="text-[#FD695A] ">Marketing</span><br> Digital Agency
-                    </h2>
-                    <p class=" pt-6 font-normal text-[21px] leading-[162%] text-[#3d3d3f]">Various versions have evolved over the years,<br> sometimes by accident, sometimes on purpose</p>
-                    
-                    <div class="flex items-center gap-[40px] pt-9">
-                           <button
-            type="button"
-            class="b rounded-[50px] w-[137px] h-[50px] bg-[#fd695a] text-white"
-          >
-           Get Started
-          </button>
-                        <div class=" n flex items-center gap-3  ">   
-                            <img src="/imges/play.svg" class="w-[35px] h-[35px] bg-[#f5f3f3] rounded-[36px]" alt="asda"> 
-                            <a href="#">Watch video</a>
-                        </div>
-                          </div>
-                    </div>
-                    <div class="left">
-                        <img src="/imges/showcase.png"  alt="asd">
-                    </div>
-              
-                </div>
-            </div> 
-        </section>
-
-
-
-
+      <section>
+        <div class="contiener">
+            <h2 class="font-bold text-[18px] text-[#3d3d3f] text-center">OUR TRUSTED CLIENTS</h2>
+           <br>
+            <div class="swiper mySwiper ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/imges/b1.svg" alt="#"></div>
+      <div class="swiper-slide"><img src="/imges/b2.svg" alt="#"></div>
+      <div class="swiper-slide"><img src="/imges/b3.svg" alt="#"></div>
+      <div class="swiper-slide"><img src="/imges/b4.svg" alt="#"></div>
+      <div class="swiper-slide"><img src="/imges/b5.svg" alt="#"></div>
+     
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+        </div>
+      </section>
     </main>
+
+
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+         autoplay: {
+    delay: 1000,
+  },
+      breakpoints: {  
+    '480': {
+      slidesPerView: 2,
+      spaceBetween: 20,},
+    '776': {
+      slidesPerView: 4,
+      spaceBetween: 30, },
+  },
+      slidesPerView: 5,
+      spaceBetween: 60,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
   </body>
 </html>
