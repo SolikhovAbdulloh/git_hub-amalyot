@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;800&display=swap");
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
 /*
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
@@ -446,7 +452,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -500,7 +506,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,16 +560,85 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-center {
-  text-align: center;
+.flex{
+  display: flex;
 }
 
-.text-red-950 {
-  --tw-text-opacity: 1;
-  color: rgb(69 10 10 / var(--tw-text-opacity));
+.h-\[50px\]{
+  height: 50px;
 }
 
-.text-blue-600 {
+.w-\[137px\]{
+  width: 137px;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
+.rounded-\[50px\]{
+  border-radius: 50px;
+}
+
+.bg-\[\#fd695a\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 105 90 / var(--tw-bg-opacity));
+}
+
+.text-white{
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: sticky;
+  z-index: 999;
+  background-color: white;
+  top: 0px;
+}
+
+.contiener{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+}
+
+a:hover{
+  color:  #FD695A;
+}
+
+button:hover{
+  background-color: antiquewhite;
+  color: black;
+}
+
+@media (min-width:1600px){
+  .contiener{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 40px;
+  }
 }

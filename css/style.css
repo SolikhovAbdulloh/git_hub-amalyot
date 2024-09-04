@@ -1,3 +1,51 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;800&display=swap");
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: sticky;
+    z-index: 999;
+    background-color: white;
+    top: 0px;
+}
+
+.contiener{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+a:hover{
+    color:  #FD695A;
+}
+button:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+@media (min-width:1600px){
+    .contiener{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 10px 40px;
+    }
+}
